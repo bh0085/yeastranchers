@@ -1,0 +1,17 @@
+{
+  "name": "yeastranchers",
+  "homepage": "https://github.com/bh0085/yeastranchers",
+  "description": "yeast utilities",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}

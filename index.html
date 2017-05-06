@@ -1,23 +1,21 @@
 ---
 layout: default
 ---
+<script src="/yeast/script/batches.js"></script>
 
 <div class="home">
+  <h3>Select your yeast</h3>
+  <div style="height: 200px">
 
-  <h1 class="page-heading">Posts</h1>
+    <link async="true" rel="import" href="bower_components/paper-autocomplete/paper-autocomplete.html">
+    <paper-autocomplete id="my-id" label="Select" ></paper-autocomplete>
+  </div>
+  
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <h3>View its history
+  </h3>
+   <link async="true" rel="import" href={{ "/elements/yeast_grav_chart.html" | prepend:site.baseurl }}>
+  <custom-element></custom-element>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  
 </div>
